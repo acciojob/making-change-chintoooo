@@ -1,18 +1,18 @@
 const makeChange = (c) => {
   // your name here
 	function makeChange(amount) {
-  const quarters = Math.floor(amount / 25);
+  var q = Math.floor(amount / 25);
   amount %= 25;
 
-  const dimes = Math.floor(amount / 10);
+  var d = Math.floor(amount / 10);
   amount %= 10;
 
-  const nickels = Math.floor(amount / 5);
+  var n = Math.floor(amount / 5);
   amount %= 5;
 
-  const pennies = amount;
+  var p = amount;
 
-  return { q: quarters, d: dimes, n: nickels, p: pennies };
+  return { q: q, d: d, n: n, p: p };
 }
 
 
